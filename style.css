@@ -9,7 +9,34 @@
 
 body,html {
   height: 100%;
+  background: #1C84B0;
 }
+
+.welcome_section {
+  background-image: url("images/bg.png");
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: 40% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  text-align: center;
+
+}
+
+.welcome_section h1 ,.welcome_section h2, .welcome_section_button, .welcome_section_button a {
+  text-transform: uppercase;
+  color: #FFFF;
+  width: 45%;
+  padding: 2rem;
+  font-family: 'Paytone One', sans-serif;
+  /* text-shadow: 6px 6px 12px rgba(22,22,22,0.3); */
+  line-height: 3.5rem;
+  font-size: 3.0rem;
+}
+
 
 .team_section h1 {
   text-align: center;
@@ -21,24 +48,45 @@ body,html {
   text-align: center;
   margin-top: 2%;
   justify-content: center;
+  padding:0 15%;
+  color: #181818;
 }
 
 .team_wrapper .team_member {
-  background: #FBFBFB;
-  margin: 1%;
-  padding:1%;
-  line-height: 1.8rem;
+  /* background: #FFDE70; */
+  background: #FFFF;
+  margin: 1% 1% 5%;
+  padding:1% 3% 3%;
+  line-height: 1.3rem;
+
 }
 
 .team_wrapper .team_member h3 {
   font-size: 1.8rem;
-  margin-bottom: 5%;
+  margin-top: 25%;
+}
+
+.team_member_info {
+  margin-top: 5%;
 }
 
 .team_member {
-  flex-basis: 30%;
+  flex-basis: 25%;
+  position: relative;
+  margin-bottom: 5%;
+
+
 }
 
+
 .team_member_photo img {
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
+  margin-bottom: 5%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid #FFFF;
 }
