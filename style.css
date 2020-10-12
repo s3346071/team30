@@ -146,3 +146,27 @@ border-radius: 22px;
 .ideal_jobs_text {
   margin-top: 5%;
 }
+
+#textbox {
+  position:fixed;
+  z-index: 1000;
+  top:0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#textbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#infobox {
+  width:80%;
+  height:80%;
+  z-index: 2000;
+  background-color: #FFFFFF;
+
+}
