@@ -142,3 +142,7 @@ border-radius: 22px;
 .ideal_jobs_table tbody tr:last-of-type {
   border-bottom:3px solid #1c84b0;
 }
+
+.ideal_jobs_text {
+  margin-top: 5%;
+}
