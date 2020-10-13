@@ -52,7 +52,7 @@ His goal is to complete a Bachelor of Information Technology and get a job in th
   else if (e.target.classList.contains('leigh_info')) {
     infobox.innerHTML =
     `
-    <p>Having worked in relationship and project management roles previously, he is studying now to boost his technical knowledge and keep up with the changes in technology. Interested in systems integration and how different technologies can talk to each other, Leigh is hoping to reduce his dependency on colleagues in technical discussions.
+    <p>This transport tecnology is also providing insights to fleet managers through the use of big data. Having worked in relationship and project management roles previously, he is studying now to boost his technical knowledge and keep up with the changes in technology. Interested in systems integration and how different technologies can talk to each other, Leigh is hoping to reduce his dependency on colleagues in technical discussions.
 
       When not chasing his young daughters around, Leigh tries to keep fit, plays guitar, works in his garden, and brews beer in his spare time. He has recently purchased a Raspberry Pi and is eager to try some programming and complete some IoT projects at home.</p>
 
