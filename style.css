@@ -11,8 +11,45 @@ body,html {
   height: 100%;
 }
 
+.navigation-menu-wrapper {
+  height: 6vh;
+  padding-top:2%;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+
+}
+
+.navigation-menu-flexbox-container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.ul-flexbox-container {
+  display: flex;
+
+}
+
+.ul-flexbox-container li {
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.ul-flexbox-container li a {
+  color: #FFFF;
+}
+
+.ul-flexbox-container li a:hover {
+  color: #F34213;
+  transition: 2s;
+}
+
 .welcome_section {
-  background-image: url("images/bg.png");
+  background-image: url("images/background.png");
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
