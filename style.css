@@ -49,7 +49,7 @@ body,html {
 }
 
 .welcome_section {
-  background-image: url("images/bg.png");
+  background-image: url("images/background.png");
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
