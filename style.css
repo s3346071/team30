@@ -117,8 +117,37 @@ body,html {
   flex-basis: 25%;
   position: relative;
   margin-bottom: 5%;
+  display:flex;
+  flex-direction: column;
 
 
+}
+
+p.team_member_info {
+  margin-bottom: 10%;
+}
+
+.text_box {
+  margin: auto auto 0;
+  padding: 0.5rem 1.5rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border:0;
+  cursor: pointer;
+  background: #404040;
+  color: #fff;
+  transition: all 500ms;
+  border-radius: 0.5rem;
+  width: 60%;
+  text-align:center;
+
+}
+
+.text_box:hover,.text_box:focus {
+  background-image: linear-gradient(to right,#F18119,#FF713B);
+  transform: scale(1.05);
 }
 
 
