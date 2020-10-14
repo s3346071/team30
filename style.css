@@ -11,6 +11,13 @@ body,html {
   height: 100%;
 }
 
+h1,h2,h3 {
+  font-family: 'Paytone One', sans-serif;
+}
+
+p {
+  font-size:1.1rem;
+}
 .navigation-menu-wrapper {
   height: 6vh;
   padding-top:2%;
@@ -20,13 +27,33 @@ body,html {
 
 }
 
+.ideal_jobs_menu {
+  position: static;
+}
+
+.ideal_jobs_menu_flex_container {
+  justify-content:center;
+
+}
+
+
+
+i.fa.fa-briefcase {
+  font-size: 3rem;
+  margin-top: 1%;
+}
+
+.icon {
+  text-align: center;
+}
+
 .navigation-menu-flexbox-container {
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-right: 5%;
 }
+
 
 .ul-flexbox-container {
   display: flex;
@@ -110,7 +137,7 @@ body,html {
 }
 
 .team_member_info {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .team_member {
@@ -165,10 +192,16 @@ p.team_member_info {
 
 .ideal_jobs_section {
   padding: 0 15%;
+  margin: 1% 0 5%;
 }
 
 .ideal_jobs_section h1 {
   text-align: center;
+  margin-bottom: 1%;
+}
+
+.ideal_jobs_section p {
+  margin-bottom: 1%;
 }
 
 .ideal_jobs_section table.ideal_jobs_table {
@@ -181,6 +214,10 @@ p.team_member_info {
 
 }
 
+.ideal_jobs_table {
+  margin:0 auto;
+}
+
 thead {
 border-radius: 22px;
 }
@@ -191,6 +228,7 @@ border-radius: 22px;
   background-color: #1c84b0;
   color: #FFFF;
   text-align: left;
+
 }
 
 .ideal_jobs_table thead tr th, .ideal_jobs_table tbody tr td {
@@ -235,4 +273,8 @@ border-radius: 22px;
   z-index: 2000;
   background-color: #FFFFFF;
 
+}
+
+.ideal_jobs_menu_flex_container li a {
+  color: #181818;
 }
