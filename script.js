@@ -50,6 +50,7 @@ teamMembers.forEach(e => {
     else if (e.target.classList.contains('georgia_info')) {
       infobox.innerHTML =
       `
+      <p>Student Number: S3873175</p>
       <p> From the start of my education right through to the end, I moved schools five times, and I was introduced to multiple people and new surroundings. After completing my VCE studies, I had planned to start a Creative Industries course at Victoria University. However, I decided against that by deferring from the classes as I had no idea what I could truly picture myself doing in life.
 
       Since then I have found my real passion lies within the creative arts and technology. I have worked in hospitality and retail, and I have been a musician in a band as a lead guitarist for the past six years. From working in busy environments full of people, I have been able to improve my ability to work within a team, and my customer service skills. Upon looking for jobs to move up from my current position, I saw many IT roles were searching for candidates. Since I have always had an interest in technology I decided it could be time for a career change, thus leading me to enrol in the Bachelor of IT at RMIT.
@@ -124,6 +125,11 @@ teamMembers.forEach(e => {
           </tbody>
           </table>
 
+          <p>As a “Campaigner” Leigh is enthusiastic and positive with a genuine interest in people. While having good energy, Campaigners need to focus and not overthink which will be important in this group task.
+
+          Whilst the Finally, the Big Five Personality Test results point to relatively stable character, the Myer-Briggs result is partly supported by the result in the Learning Styles Test. This suggests that reflection – standing back to observe, collecting data and thinking about what happened – is his learning method, it will be key to get involved and not be an onlooker. </p>
+
+
     `
 }
 
@@ -132,11 +138,42 @@ else if (e.target.classList.contains('jake_info')) {
   `
   <p>Following school, he undertook and completed a Cert III in Heavy Automotive Diesel Mechanics which led him to employment on the outer suburbs of Sydney. As a full time mechanic, he is passionate about the future of the industry. By broadening his knowledge in IT, he hopes to increase workplace efficiency and make it a safer and more fulfilling practice to be a part of.  Whilst not working, he enjoys challenging himself outdoors by rock climbing and trail running. He enjoys reading contemporary tech articles and developing new skill in computing through the likes of LinkedIn Learning and FreeCodeCamp. Jake’s interest in IT does not have a long history. He grew up using electronic devices for schoolwork and entertainment. However, it took a global health pandemic for him to realise the diverse, proliferating, and intensifying nature of technology. His passion for personal development has led him to RMIT and into Team 30. </p>
 
+  <h3>Test results</h3>
+  <table class="ideal_jobs_table">
+    <thead>
+      <tr>
+        <th>Personality Test | 16Personalities </th>
+        <th>Social Persona | ProProfs  Test</th>
+        <th>Learning styles | PersonalityMax </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Protagonist </td>
+
+        <td>Amiable </td>
+        <td>
+        <ul>
+        <li>Auditory – 38% </li>
+        <li>Kinaesthetic – 33% </li>
+        <li>Tertiary – 29% </li>
+        </ul>
+        </td>
+      </tr>
+
+
+      </tbody>
+      </table>
+
+      <p>As a result of completing these tests, my team will have a greater awareness of who I am. The better our understanding of each other, the better we can utilise each other’s strengths to the teams advantage. As a ‘Protagonist’ I hope to encourage open communication and be aware of sensitivities within the team. I can be relied upon to follow through on commitments. However, I must be very aware of my altruistic trait and not to allow other people’s problems to become my own. My ‘Amiable Social Persona’ is a reminder that I can be very supportive when necessary and so I should be aware of other team members losing motivation or becoming overwhelmed. Knowing that I am predominantly an Auditory Learner, the team should be aware that I may miss visual details. However, of benefit, I will likely remember and recall spoken information well. </p>
+
+
   `
 }
 else if (e.target.classList.contains('emma_info')) {
   infobox.innerHTML =
   `
+  <p>Student Number: S3852481</p>
   <p>I had done 2 years and wasn’t finding it very interesting so I started doing computer science units to change degrees. It was a little bit of impulsiveness and a little bit my love of video games. I learnt math, physics, problem solving, and some C++ programming while at UOW. In my own time I have also learnt 3D modelling in Blender and how to make a small game in Unity. I have many hobbies including art and music. Recently I began learning to play the bass after my grandmother bought me one, I think creative hobbies go hand in hand with IT work.</p>
 
   `
