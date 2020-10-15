@@ -15,6 +15,10 @@ h1,h2,h3 {
   font-family: 'Paytone One', sans-serif;
 }
 
+h1,h2,h3,p,table {
+  margin-bottom: 1rem;
+}
+
 p {
   font-size:1.1rem;
 }
@@ -156,7 +160,7 @@ i.fa.fa-briefcase {
 
 .team_wrapper .team_member h3 {
   font-size: 1.8rem;
-  margin-top: 2rem;
+  margin: 2rem 0 0;
 }
 
 .team_member_info {
@@ -302,6 +306,8 @@ border-radius: 22px;
   color: #181818;
 }
 
-.it_technologies p,.it_technologies h1,.it_technologies h2,.it_technologies h3 {
-  margin-bottom: 1rem;
+
+
+.project_idea {
+  text-align: center;
 }
