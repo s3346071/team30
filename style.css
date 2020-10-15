@@ -301,3 +301,7 @@ border-radius: 22px;
 .ideal_jobs_menu_flex_container li a {
   color: #181818;
 }
+
+.it_technologies p,.it_technologies h1,.it_technologies h2,.it_technologies h3 {
+  margin-bottom: 1rem;
+}
