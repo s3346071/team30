@@ -220,7 +220,23 @@
       <p>This page functions as a video conference host between the AR device and an application installed on the phone of a mechanic. The mechanic is accessible when the drivers AR goggles and mechanics phone are both connected to a wireless network. The mechanic can see exactly what the driver is looking at and ask them questions. Some repairs may be achievable by the driver under the guidance of the mechanic. For faults that are not able to be rectified remotely, the mechanic will need to drive out and repair the vehicle himself or have the vehicle recovered to the workshop. Since the mechanic has been able to see the fault, they will know exactly what tools and parts to take to the job, or if it is unrepairable and not worth driving to. In which case, recovery can be actioned without a wasted drive to the site.   </p>
 
       <h2>Additional Functions of RGM </h2>
-      <p>Another function that could be possible is to have the AR goggles able to connect to the Electronic Control Unit (ECU or Computer) of the vehicle. This connectedness will allow electronic vehicle faults to be displayed through the goggles. The function could also allow technicians to remotely connect into the ECU as a supplement in diagnosis and potentially allow faults to be rectified.</p>
+      <h3>Telematics live data feed </h3>
+      <p>Telematics is an increasingly emergent branch of IT that deals with the long-distance transfer of computerised data, such as electronic data from a truck in our case. Insurance providers are increasingly using data captured by Telematics to tailor insurance policies. Telematics data is gathered via the OBD2 port of the vehicle using a wireless dongle such as the Veepeak dongle that the RGM utilises. </p>
+      <p>Data gathered can be used to:  </p>
+
+      <ul>
+        <li>Monitor sensor data live e.g. Component temperatures, fluid levels  </li>
+        <li>Receive alerts for vehicle fault codes  </li>
+        <li>Give driving feedback to the driver (excessive acceleration, heavy braking) </li>
+        <li>Recommend that the driver rest based on time or KM travelled  </li>
+        <li>Track a stolen vehicle </li>
+        <li>Give speeding alerts </li>
+      </ul>
+
+      <p>According to a Willis Towers Watson <a href="https://www.casact.org/community/affiliates/sccac/1211/Harbage.pdf">study</a>, the number of crashes in commercial fleets that were monitored by telematics fell by 80%.  </p>
+      <p>A Cloud server will be used for the transmission of all Telematics data from the truck to the headquarters of the trucking company. The data flow as seen in Figure 2 below, begins at the truck. Data from the ECU is received by the HoloLens. The HoloLens uploads that data to a Cloud server. The data is then accessible through an online (SaaS) application monitored by the Transport Operations Manager. </p>
+      <p>The driver also has a direct line of video communication with a technician as well. It is anticipated that a technician working from a depot can send commands to the vehicles ECU via the HoloLens.  </p>
+      <p>However, cybersecurity will be a significant point of emphasis since a wireless device will be connected to the truck’s computer. There are <a href="https://www.youtube.com/watch?v=MK0SrxBC1xs&feature=youtu.be&ab_channel=WIRED">examples</a> on YouTube where ethical hackers have hacked into vehicles while they were on the road and overridden braking and steering functions. </p>
 
       <h2>Technology Required  </h2>
       <h3>Hardware </h3>
@@ -242,12 +258,53 @@
 
       <p>In designing the dock, it is important to consider the number of different vehicles that it may be used in. Keeping this in mind it is likely the dock would be designed as a two-piece component. The majority of the docking system including the device bed, the charging integration and the hold-down mechanism should be constructed as one piece with a universal boss. The second part to the dock will be tailored to the specifications of the vehicle that it mounts in. This means part one can be mass produced while part two can be made case by case. </p>
 
+      <h2>Skills Required</h2>
+      <p>Ideally, members would have the following social and human characteristics and skills:</p>
+      <ul>
+        <li>A high level of enthusiasm   </li>
+        <li>Excellent listening skills   </li>
+        <li>A preparedness to undertake tasks that they are not necessarily experienced or competent in   </li>
+        <li>Strive to identify better ways of achieving task goals even if the technique has not been tried and tested.   </li>
+      </ul>
+
+      <p>Team members with these technical skillsets are preferred:</p>
+
+      <ul>
+        <li>Project manager: Responsible for interfacing between the development team and the customer. A degree in IT majoring in Business would be ideal. The manager understands the customer’s needs and their timeline. The manager keeps the team on track by setting due by dates and scheduling tie ins to track progress. The manager notifies the team if any parameters for the development change and if the team has queries for the customer, they go through the manager.    </li>
+        <li>Qualified Heavy Automotive Mechanic: Having one member qualified as a mechanic will save many questions back and forth with the customer. This member will have a firm grasp on what information is important to the truck driver and the customers mechanic. This member will know the names and locations of all the components on the vehicles and be able to create logical sequencing in the diagnostic function of the device.        </li>
+        <li>Data Scientist: Their expertise will be relied upon to support the machine learning aspect of the digital infrastructure. The data scientist will largely be focused on the augmented reality component of the application.    </li>
+        <li>Full stack developer: The final requirement is one member with experience in front and back end development, preferably holding a bachelor of IT majoring in Application Development. The role of the App developer will be paramount in tying all aspects of the application, technology, and the customers’ requirements together.  
+
+ </li>
+      </ul>
+
+      <h2>Pricing </h2>
+      <p>No matter how good our product is, it is critical that we sell it at a price that customers respond to, but also provides an adequate margin, enables the business to operate effectively and permits us to re-invest and continuously improve the solution.  </p>
+      <p>To ensure recurring revenue, pricing would be on an optional rental model of 36, 48 or 60 months. This would cover hardware and software, installation (if required), access to the maintenance platform and technical support. It would be critical that our pricing is clear and transparent as this would build trust in our brand (Balki, 2018). </p>
+      <p>We agree that an outright pricing option would be considered, however in order to encourage customers down the rental path, warranty for outright purchase would be limited to one year whereas under the rental option the warranty would be in place for the full term. </p>
+      <p>Outright purchasers would also still need to pay a monthly subscription for access to the software. </p>
+      <p>While the Microsoft HoloLens is expensive (retailing for just under AU$5,600) there are a range of other virtual reality headsets on the market costing considerably less. Oculus headsets retail for around AU$500 (Stein, 2020), though we would obviously gain re-seller prices for any off the shelf product. There is also a growing market in AR glasses (Sawh, M 2020). Our challenge would be to find (or engage a manufacturer to produce) a headset that fulfils our requirements and provides a positive user experience. </p>
+      <p>Whilst extensive market research would be performed to ensure we hit the right price point, our initial feeling is that truck operators would pay $90 per month for the solution over a 36 month term. </p>
+      <p>At $90 this would provide an annual revenue of $1,080 and total contract value of $3,240. </p>
+      <p>After the rental term ended, we would look to re-sign the customer with new hardware, or ideally squeeze additional months out of the existing hardware in order to maximise our return on the up-front hardware costs. </p>
 
       <h2>Outcome </h2>
       <p>The RGM concept has largely been tailored to large fleet owning organisation but could just as easily be adapted to suit everyday people. Nobody likes waiting on the side of the road for the mobile mechanic to arrive, especially when he says, “sorry there’s nothing I can do with your car on the side of the road”. This concept would save people paying roadside assistance fees, it would increase people’s awareness about their own vehicle, and it would result in vehicles lasting for much longer. When it comes to large organisations, a HoloLens is worth about $5599, most trucks today are worth in excess of $100 000, it would make sense that they pay a small amount extra for this device that will pay dividends in the long run.   </p>
       <p></p>
       <p></p>
       <p></p>
+
+      <h2>References </h2>
+      <ul>
+        <li>National Heavy Vehicle Regulator (NHVR), 2020, viewed 14 October 2020<a href="https://www.nhvr.gov.au/safety-accreditation-compliance/chain-of-responsibility">link</a> </li>
+        <li>Balki, S 2018, ‘How to Choose a Pricing Strategy for Your SaaS Business’, The Entrepreneur, April 24, viewed 15 October 2020 <a href="https://www.entrepreneur.com/article/311425">link</a> </li>
+        <li>Stein, S 2020, ‘Best VR Headsets for 2020’, cnet 8 September, viewed 16 October 2020 <a href="https://www.cnet.com/news/best-vr-headset-for-2020/">link</a> </li>
+        <li>Sawh, M 2020, ‘The best AR glasses and smartglasses 2020: Snap, Vuzix and more’, Wareable , 1 July, viewed 16 October 2020 <a href="https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest">link</a> </li>
+        <li>National Transport Insurance, 2016, ‘NTI’s guide to the Trucking Industry 2016’, viewed 16 October 2020 <a href="http://www.thewordshop.com.au/wp-content/uploads/2011/06/NTI-eBook-Editing.pdf">link</a> </li>
+        <li><a href="https://www.windowscentral.com/microsoft-hololens-2-more-markets-2020">link</a></li>
+      </ul>
+
+      <h2>Group Reflection </h2>
     </div>
 
 
