@@ -19,6 +19,10 @@ h1,h2,h3,p,table,ul {
   margin-bottom: 1rem;
 }
 
+i.fa {
+  font-size: 4rem;
+}
+
 li {
   margin-top: 0.2rem;
 }
@@ -320,4 +324,19 @@ border-radius: 22px;
 .project_idea {
   text-align: center;
   padding: 0 15%;
+}
+
+.fade-in {
+  opacity:0;
+  transform: translateY(15px);
+  transition: 1.5s all ease-in-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+i.fa {
+  font-size: 4rem;
 }
