@@ -22,7 +22,7 @@ teamMembers.forEach(e => {
 
       He has spent a year working in the sales department for a cloud backup company and got to know different aspects of the IT profession.
 
-      In his spare time, he is teaching himself web development and Object-oriented programming. He has completed a couple of courses on HTML and CSS. He is currently undertaking an online JavaScript course.
+      In his spare time, he is teaching himself web development and Object-oriented programming. He has completed a couple of courses on HTML and CSS. He is currently undertaking an online JavaScript course. He finds it fascinating adding interactivity to his websites, giving its visitors a complete new experience and feel. He still has a long journey ahead of him as he continues to hone his web development skills.
 
       His goal is to complete a Bachelor of Information Technology and get a job in the field of web-development after graduating. </p>
       <p>Personality Test | 16Personalities: ISTP - Explorer </p>
