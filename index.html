@@ -112,15 +112,57 @@
     <div class="project_idea" id="project_idea">
       <h1>Project Idea</h1>
       <h2>Remote Guided Maintenance</h2>
+      <img src="">
       <h3>Does your organisation own a large fleet of vehicles that operate throughout Australia?    </h3>
       </h3>Do you want to save thousands of dollars in call-out fees when your vehicles break down?   </h3>
 
       <h2>Overview </h2>
-      <p>I would like to develop an application that can be installed onto the Microsoft HoloLens II (https://www.youtube.com/watch?v=XwOnHqiNAeU) or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including vehicle specifications, operating instructions, troubleshooting and diagnosis guides. The technology will also function as a live video transmitter between the driver and a remote mechanic. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in break down call-out fees imposed by mobile mechanics.   </p>
+      <p>I would like to develop an application that can be installed onto the Microsoft <a href="https://www.youtube.com/watch?v=XwOnHqiNAeU">HoloLens II</a> or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including vehicle specifications, operating instructions, troubleshooting and diagnosis guides. The technology will also function as a live video transmitter between the driver and a remote mechanic. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in break down call-out fees imposed by mobile mechanics.   </p>
       <h2>Context </h2>
 
       <p>Transport and the movement of goods cease when trucks and buses break down. Often companies must send technicians out from a workshop to diagnose, fix and/or recover broken-down vehicles. Alternatively, companies pay large call-out fees to contracted mobile mechanics. The technicians who deploy to support breakdowns are often going in blind, having only received vague fault descriptions in a work request email or over the phone. As a result, Technicians may take the incorrect tools and parts for the job or they may be driving out to do a repair that cannot be achieved on the side of the road. Sometimes the fix is simple and could be achieved by the driver. Sometimes the breakdown has occurred because the driver did not fully understand the operation of the vehicle or the daily maintenance requirements and fluid specifications of the vehicle.   </p>
       <p>The Remote Guided Maintenance (RGM) concept seeks to address all these issues by a providing each vehicle of an organisation with a wearable Augmented Reality device. The device would be installed with a practical application tailored to the make and model of the vehicle it belongs in.    </p>
+
+      <h2>Application Design</h2>
+      <h3>Software</h3>
+      <p>Some transport jobs require the truck driver to go out of mobile coverage. For this reason, the HoloLens will store all necessary data and AR overlays on the device itself, which currently has 64GB of storage space.  </p>
+      <p>When the driver first enters the truck they will switch on the HoloLens. They will be asked for their employee ID and a password. Upon successful login, the HoloLens will connect with the trucks ECU via the Veepeak OBD2 Wireless Dongle (more on this in the Hardware section). The HoloLens will confirm that it is in the correct vehicle based on the unique Vehicle Identification Number or VIN.</p>
+      <p>The HoloLens then enters the Index Screen and asks the driver what they would like to do. The following options are available:</p>
+      <ul>
+        <li>First and Last Parade </li>
+        <li>Vehicle Specifications  </li>
+        <li>Component Identifier and Descriptor </li>
+        <li>Troubleshooting and Diagnosis    </li>
+        <li>Contact the Mechanic</li>
+      </ul>
+
+      <h2>Application Screens + Associated Functions </h2>
+      <h3>1. First and Last Parade</h3>
+      <p>This page guides the driver through all the checks that need to be performed on the truck before it is started. It also guides the driver through checks that should be conducted at the end of the shift when the vehicle is shutdown. For example: The following checks are to occur before the vehicle is started:</p>
+      <ul>
+        <li>Engine oil level    </li>
+        <li>Brake fluid level   </li>
+        <li>Windscreen washer level  </li>
+        <li>Tyre checks</li>
+        <li>Under vehicle leak checks</li>
+        <li>Vehicle compliance checks </li>
+        <li>Cargo security checks; etc</li>
+      </ul>
+
+      <p>The purpose of the first and last parade is twofold. Firstly, it is done to reduce the likelihood of a break down on the road. It is also done to ensure that the vehicle is compliant for road transport.  </p>
+      <p>Penalties for non-compliance are metered out by regulators such as the NHVR in Australia.  Aside from penalties, non-compliance offences can result in several other consequences. There is a financial burden to the vehicle operator in both the paying of fines and the loss of customers because of reputational damage (NHVR, 2020). Non-compliance can lead to machinery failure but more importantly, it can present health and safety risks to the driver, other road users and pedestrians. As such, “pre-trip” or “pre-start” vehicle inspections have become standard practice in the transport industry to ensure that operators are complying with the Chain of Responsibility (COR) laws.  </p>
+      <p>Pre-trip inspections have traditionally been performed by pen and paper with the driver doing a lap of the truck with a clip board and ticking boxes. When done routinely, there is a known temptation for drivers on a tight schedule to complete the checklist from the cabin – essentially falsifying the inspection. </p>
+      <p>Our intention is to replace the paper and pen method of completing pre-trip inspections with a recorded inspection using the AR headset. This way, the employer is assured that the inspection has been completed, and any issues that are found can be channelled quickly to the correct workflow process - catalogued and addressed immediately or forwarded to the depot’s maintenance personnel. </p>
+
+
+      <h3>2. Vehicle Specifications</h3>
+      <p>Vehicle Specifications are important for a driver to be aware of. Knowing the height of the vehicle will prevent you from driving under overpasses or into car parks that are too low. Knowing the weight of your vehicle will prevent you from driving over bridges that cannot support the weight of the vehicle.</p>
+      <ul>
+        <li>Vehicle dimensions   </li>
+        <li>Vehicle weights (laden, unladen, bridge classification) </li>
+        <li>Fluid types   </li>
+        <li>Fluid quantities</li>
+      </ul>
 
 
       <h2>Outcome </h2>

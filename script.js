@@ -58,6 +58,20 @@ teamMembers.forEach(e => {
       I have no real prior expertise within the field, and I hope to gain the relevant experience throughout this course and further self-growth in the outside world, that will lead me to some development roles. Front-end development has caught my eye specifically as it still incorporates creative elements of design etc.
       </p>
 
+      <p>Myers-Brigg 16 Personality Test</p>
+      <p>Personality type: Defender </p>
+      <p>Strengths:  loyal and hard-working, good practical skills, supportive, reliable and patient. </p>
+      <p>Weaknesses: Humble and shy, Overload themselves, repress their feelings, too altruistic. </p>
+      <p>Learning Style Test:</p>
+      <p>Auditory: 35%</p>
+      <p>Visual: 50% </p>
+      <p>Tactile: 15% </p>
+      <h3>Creativity Style Test:  </h3>
+      <h3>Creativity enriches you</h3>
+      <p>“Creativity is separate from the real world for you. But it’s a magical world in which you like to immerse yourself. When you’re involved in it, you get the wonderful sensation that there are no limits, that anything is possible. What you are really looking for is harmony — you want to feel you are a part of what you create.” (Psychologies UK – 2020) </p>
+
+      <p>The results from these tests will give my teammates a better indication of what my personality could be like in a group setting. As someone who can be equally introverted and extroverted, I can show great listening skills while also being able to come forward and suggest ideas in areas that I am comfortable with. Being mainly a visual learner, I get the most out of watching people or going through the task myself in front of me to get a better understanding. </p>
+
       `
   }
 
@@ -65,7 +79,7 @@ teamMembers.forEach(e => {
     infobox.innerHTML =
     `
     <p>Student No: s3875525</p>
-    <p>This transport tecnology is also providing insights to fleet managers through the use of big data. Having worked in relationship and project management roles previously, he is studying now to boost his technical knowledge and keep up with the changes in technology. Interested in systems integration and how different technologies can talk to each other, Leigh is hoping to reduce his dependency on colleagues in technical discussions.
+    <p>This transport technology is also providing insights to fleet managers through the use of big data. Having worked in relationship and project management roles previously, he is studying now to boost his technical knowledge and keep up with the changes in technology. Interested in systems integration and how different technologies can talk to each other, Leigh is hoping to reduce his dependency on colleagues in technical discussions.
 
       When not chasing his young daughters around, Leigh tries to keep fit, plays guitar, works in his garden, and brews beer in his spare time. He has recently purchased a Raspberry Pi and is eager to try some programming and complete some IoT projects at home.</p>
       <h3>Test results</h3>
@@ -175,6 +189,18 @@ else if (e.target.classList.contains('emma_info')) {
   `
   <p>Student Number: S3852481</p>
   <p>I had done 2 years and wasn’t finding it very interesting so I started doing computer science units to change degrees. It was a little bit of impulsiveness and a little bit my love of video games. I learnt math, physics, problem solving, and some C++ programming while at UOW. In my own time I have also learnt 3D modelling in Blender and how to make a small game in Unity. I have many hobbies including art and music. Recently I began learning to play the bass after my grandmother bought me one, I think creative hobbies go hand in hand with IT work.</p>
+
+  <p>Myers-Briggs Test: INFP-T/Mediator </p>
+  <p>Mediators are introverted, intuitive, feeling, and prospecting. Strengths include being: thoughtful, generous, open-minded, creative, passionate, and loyal to their values. Weaknesses include being: overly idealistic, self-critical, impractical, emotionally-driven, conflict-averse, and difficult to get to know.</p>
+
+  <p>Learning Style Test: Tactile Learner </p>
+  <p>Tactile learners learn by touching and doing. They learn best when they are moving, building, touching, or drawing what they learn. This also applies to learning through doing the exercises or questions in a book rather than reading the chapter.</p>
+
+  <p>Four Temperaments Test: Sanguine </p>
+  <p>The sanguine temperament is spontaneous, sociable, and creative. They can also be sensitive and thoughtful. They have a weakness for following through all the way, being late, and forgetful.</p>
+
+  <p>What does this mean? </p>
+  <p>In a team setting knowing the meaning behind personality test results can be useful for spotting potential clashes between team members and may prove helpful in resolving conflicts. Knowing who is likely to take charge and who may need a push to interact with in a team is important, especially online teams where it can be hard to get a read on someone. My results show that in a team I am able to be creative and open-minded, but that I may have trouble with setting realistic goals and completing them. I have to be considerate to my team about completing my work on time. </p>
 
   `
 }
