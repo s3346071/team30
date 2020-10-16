@@ -124,15 +124,27 @@ i.fa.fa-briefcase {
 
 }
 
-.welcome_section h1 ,.welcome_section h2, .welcome_section_button, .welcome_section_button a {
+.welcome_section h1 ,.welcome_section h2, .welcome_section_button  {
   text-transform: uppercase;
   color: #FFFF;
   width: 45%;
   padding: 2rem;
   font-family: 'Paytone One', sans-serif;
-  /* text-shadow: 6px 6px 12px rgba(22,22,22,0.3); */
+
   line-height: 3.5rem;
   font-size: 3.0rem;
+}
+
+.welcome_section_button a {
+font-family: 'Paytone One', sans-serif;
+color: #FFFF;
+}
+
+a.blink:hover {
+
+  display: inline-block;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .team_section {
@@ -151,8 +163,10 @@ i.fa.fa-briefcase {
   justify-content: center;
   padding:0 15%;
   color: #181818;
-  margin-top: 5%;
+  margin-top: 3%;
 }
+
+
 
 
 
