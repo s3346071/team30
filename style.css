@@ -357,3 +357,8 @@ i.fa {
   position: static;
   color: #181818;
 }
+
+.brochure {
+  width: 60%;
+  height: auto;
+}
