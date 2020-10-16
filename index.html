@@ -91,43 +91,209 @@
       </div>
     </div>
 
-    <div class="ideal_jobs_section">  <!-- fix up class name 13.10! -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
     <div class="project_idea" id="project_idea">
+
+      <div class="fade-in">
+      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+      </div>
+
       <h1>Project Idea</h1>
       <h2>Remote Guided Maintenance</h2>
+      <img src="">
       <h3>Does your organisation own a large fleet of vehicles that operate throughout Australia?    </h3>
-      </h3>Do you want to save thousands of dollars in call-out fees when your vehicles break down?   </h3>
+      <h3>Do you want to save thousands of dollars in call-out fees when your vehicles break down?   </h3>
 
       <h2>Overview </h2>
-      <p>I would like to develop an application that can be installed onto the Microsoft HoloLens II (https://www.youtube.com/watch?v=XwOnHqiNAeU) or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including vehicle specifications, operating instructions, troubleshooting and diagnosis guides. The technology will also function as a live video transmitter between the driver and a remote mechanic. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in break down call-out fees imposed by mobile mechanics.   </p>
+      <p>I would like to develop an application that can be installed onto the Microsoft <a href="https://www.youtube.com/watch?v=XwOnHqiNAeU">HoloLens II</a> or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including vehicle specifications, operating instructions, troubleshooting and diagnosis guides. The technology will also function as a live video transmitter between the driver and a remote mechanic. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in break down call-out fees imposed by mobile mechanics.   </p>
       <h2>Context </h2>
 
       <p>Transport and the movement of goods cease when trucks and buses break down. Often companies must send technicians out from a workshop to diagnose, fix and/or recover broken-down vehicles. Alternatively, companies pay large call-out fees to contracted mobile mechanics. The technicians who deploy to support breakdowns are often going in blind, having only received vague fault descriptions in a work request email or over the phone. As a result, Technicians may take the incorrect tools and parts for the job or they may be driving out to do a repair that cannot be achieved on the side of the road. Sometimes the fix is simple and could be achieved by the driver. Sometimes the breakdown has occurred because the driver did not fully understand the operation of the vehicle or the daily maintenance requirements and fluid specifications of the vehicle.   </p>
       <p>The Remote Guided Maintenance (RGM) concept seeks to address all these issues by a providing each vehicle of an organisation with a wearable Augmented Reality device. The device would be installed with a practical application tailored to the make and model of the vehicle it belongs in.    </p>
 
+      <h2>Application Design</h2>
+      <h3>Software</h3>
+      <p>Some transport jobs require the truck driver to go out of mobile coverage. For this reason, the HoloLens will store all necessary data and AR overlays on the device itself, which currently has 64GB of storage space.  </p>
+      <p>When the driver first enters the truck they will switch on the HoloLens. They will be asked for their employee ID and a password. Upon successful login, the HoloLens will connect with the trucks ECU via the Veepeak OBD2 Wireless Dongle (more on this in the Hardware section). The HoloLens will confirm that it is in the correct vehicle based on the unique Vehicle Identification Number or VIN.</p>
+      <p>The HoloLens then enters the Index Screen and asks the driver what they would like to do. The following options are available:</p>
+      <ul>
+        <li>First and Last Parade </li>
+        <li>Vehicle Specifications  </li>
+        <li>Component Identifier and Descriptor </li>
+        <li>Troubleshooting and Diagnosis    </li>
+        <li>Contact the Mechanic</li>
+      </ul>
+
+      <h2>Application Screens + Associated Functions </h2>
+      <h3>1. First and Last Parade</h3>
+      <p>This page guides the driver through all the checks that need to be performed on the truck before it is started. It also guides the driver through checks that should be conducted at the end of the shift when the vehicle is shutdown. For example: The following checks are to occur before the vehicle is started:</p>
+      <ul>
+        <li>Engine oil level    </li>
+        <li>Brake fluid level   </li>
+        <li>Windscreen washer level  </li>
+        <li>Tyre checks</li>
+        <li>Under vehicle leak checks</li>
+        <li>Vehicle compliance checks </li>
+        <li>Cargo security checks; etc</li>
+      </ul>
+
+      <p>The purpose of the first and last parade is twofold. Firstly, it is done to reduce the likelihood of a break down on the road. It is also done to ensure that the vehicle is compliant for road transport.  </p>
+      <p>Penalties for non-compliance are metered out by regulators such as the NHVR in Australia.  Aside from penalties, non-compliance offences can result in several other consequences. There is a financial burden to the vehicle operator in both the paying of fines and the loss of customers because of reputational damage (NHVR, 2020). Non-compliance can lead to machinery failure but more importantly, it can present health and safety risks to the driver, other road users and pedestrians. As such, “pre-trip” or “pre-start” vehicle inspections have become standard practice in the transport industry to ensure that operators are complying with the Chain of Responsibility (COR) laws.  </p>
+      <p>Pre-trip inspections have traditionally been performed by pen and paper with the driver doing a lap of the truck with a clip board and ticking boxes. When done routinely, there is a known temptation for drivers on a tight schedule to complete the checklist from the cabin – essentially falsifying the inspection. </p>
+      <p>Our intention is to replace the paper and pen method of completing pre-trip inspections with a recorded inspection using the AR headset. This way, the employer is assured that the inspection has been completed, and any issues that are found can be channelled quickly to the correct workflow process - catalogued and addressed immediately or forwarded to the depot’s maintenance personnel. </p>
+
+
+      <h3>2. Vehicle Specifications</h3>
+      <p>Vehicle Specifications are important for a driver to be aware of. Knowing the height of the vehicle will prevent you from driving under overpasses or into car parks that are too low. Knowing the weight of your vehicle will prevent you from driving over bridges that cannot support the weight of the vehicle.</p>
+      <ul>
+        <li>Vehicle dimensions   </li>
+        <li>Vehicle weights (laden, unladen, bridge classification) </li>
+        <li>Fluid types   </li>
+        <li>Fluid quantities</li>
+      </ul>
+
+      <h3>3. Component Identifier and Descriptor </h3>
+      <p>This page details the name, location, description, and function of all components that make up the vehicle. Modern trucks come fitted with many buttons and toggles, it can be hard to remember what all the functions are and how to use them.</p>
+      <p>There are three methods of finding a component on this page:</p>
+      <p>1. Looking at the vehicle with the AR goggles and pointing to a component   </p>
+      <p>2. Using voice to search for an item – “Where are the Air Tanks?”</p>
+      <p>3. A categorical drop-down list of components to select from, for example;   </p>
+
+      <ol>
+        <li>Drive train
+          <ol>
+            <li>Engine   </li>
+            <li>Transmission   </li>
+            <li>Front axle   </li>
+          </ol>
+        </li>
+
+        <li>Body
+          <ol>
+            <li>Cabin</li>
+            <li>Tray   </li>
+
+          </ol>
+        </li>
+        <li>Fuel System
+          <ol>
+            <li>Fuel tank </li>
+            <li>Fuel filter   </li>
+            <li>Fuel lines   </li>
+          </ol>
+        </li>
+        <li>Brake system
+          <ol>
+            <li>Brake fluid reservoir   </li>
+            <li>Brake lines; etc   </li>
+          </ol>
+        </li>
+      </ol>
+
+      <h3>4. Troubleshooting and Diagnosis   </h3>
+      <p>This function takes a driver through a step by step guide on troubleshooting vehicle faults. For example, if the vehicle does not start then the driver would navigate to this page and search for the appropriate troubleshooting guide using either voice command or scrolling through a list. A sequenced diagnosis guide may look like this:</p>
+      <p>a. Truck does not start</p>
+      <ol>
+        <li>check battery voltage – The location of the battery voltage indicator is shown to the driver, and the minimum voltage specification is made known </li>
+        <li>check park brake is applied – The driver is directed to the park brake and shown which position the toggle is supposed to be in. If the toggle is in the correct position, then the driver can say “next” </li>
+        <li>check battery – The driver is guided to the battery compartment and shown what to check on the battery such as terminal security and electrolyte level indicator   </li>
+        <li>check wiring – The driver is shown the wiring route from the battery to the starter motor and other key electrical components      </li>
+        <li>check starter motor – The driver is shown the location of the starter motor and what it is supposed to look like and which terminals to check for security   </li>
+      </ol>
+
+      <p>If the fault is identified, the application will provide guidance on how it can be rectified. If the fault requires tools or equipment, then the driver will be directed to the page: Contact the Mechanic. </p>
+
+      <h3>5. Contact the Mechanic      </h3>
+
+      <p>This page functions as a video conference host between the AR device and an application installed on the phone of a mechanic. The mechanic is accessible when the drivers AR goggles and mechanics phone are both connected to a wireless network. The mechanic can see exactly what the driver is looking at and ask them questions. Some repairs may be achievable by the driver under the guidance of the mechanic. For faults that are not able to be rectified remotely, the mechanic will need to drive out and repair the vehicle himself or have the vehicle recovered to the workshop. Since the mechanic has been able to see the fault, they will know exactly what tools and parts to take to the job, or if it is unrepairable and not worth driving to. In which case, recovery can be actioned without a wasted drive to the site.   </p>
+
+      <h2>Additional Functions of RGM </h2>
+      <h3>Telematics live data feed </h3>
+      <p>Telematics is an increasingly emergent branch of IT that deals with the long-distance transfer of computerised data, such as electronic data from a truck in our case. Insurance providers are increasingly using data captured by Telematics to tailor insurance policies. Telematics data is gathered via the OBD2 port of the vehicle using a wireless dongle such as the Veepeak dongle that the RGM utilises. </p>
+      <p>Data gathered can be used to:  </p>
+
+      <ul>
+        <li>Monitor sensor data live e.g. Component temperatures, fluid levels  </li>
+        <li>Receive alerts for vehicle fault codes  </li>
+        <li>Give driving feedback to the driver (excessive acceleration, heavy braking) </li>
+        <li>Recommend that the driver rest based on time or KM travelled  </li>
+        <li>Track a stolen vehicle </li>
+        <li>Give speeding alerts </li>
+      </ul>
+
+      <p>According to a Willis Towers Watson <a href="https://www.casact.org/community/affiliates/sccac/1211/Harbage.pdf">study</a>, the number of crashes in commercial fleets that were monitored by telematics fell by 80%.  </p>
+      <p>A Cloud server will be used for the transmission of all Telematics data from the truck to the headquarters of the trucking company. The data flow as seen in Figure 2 below, begins at the truck. Data from the ECU is received by the HoloLens. The HoloLens uploads that data to a Cloud server. The data is then accessible through an online (SaaS) application monitored by the Transport Operations Manager. </p>
+      <p>The driver also has a direct line of video communication with a technician as well. It is anticipated that a technician working from a depot can send commands to the vehicles ECU via the HoloLens.  </p>
+      <p>However, cybersecurity will be a significant point of emphasis since a wireless device will be connected to the truck’s computer. There are <a href="https://www.youtube.com/watch?v=MK0SrxBC1xs&feature=youtu.be&ab_channel=WIRED">examples</a> on YouTube where ethical hackers have hacked into vehicles while they were on the road and overridden braking and steering functions. </p>
+
+      <h2>Technology Required  </h2>
+      <h3>Hardware </h3>
+      <p>The Microsoft HoloLens 2 is available in Australia here, and retails for AU$5,599.00 incl. GST. As of May 2020, the HoloLens 2 does not have integrated 4G or 5G. While the technology catches up to the requirements of RGM we can use an alternative means of network connectivity. A USB modem such as the Telstra 4GX gives users access to 4G data on the go. The 4GX coupled with this USB-C to USB 3.0 adapter can be plugged into the USB-C port of the HoloLens. </p>
+
+      <p>For the HoloLens to integrate with the truck completely, it will need a means of connecting to the trucks ECU (Electronic Control Unit). To connect to the ECU you must plug into the OBD (On-Board Diagnostics) port of the vehicle. Most vehicles produced after 1996 will have this port (Allstate 2020) and it is typically located under the dash on the driver or passenger side.   </p>
+      <p>In connecting the HoloLens to the ECU we will utilise a wireless OBD2 dongle that pairs with the PyOBD application. PyOBD is an open source OBD2 diagnostic application written entirely in python. The software can be installed on a device with python 2.x or greater. The HoloLens can support the latest version of Python due to it running the Mixed Reality platform under the Windows 10 computer OS.  </p>
+      <p>‘The MaxiECU 4th Gen OBD2 scan tool is a professional full system scan tool that connects to your windows laptop or tablet via stable Bluetooth or Wi-Fi connection.’ (OBD2 Australia 2020). This device is small and can be left attached to the OBD2 port permanently. The MaxiECU and the HoloLens both support Bluetooth and Wi-Fi which provides a redundancy for connectivity.  </p>
+      <p>The HoloLens will require a docking station within the truck that satisfies the following: </p>
+
+      <ul>
+        <li>Is able to charge the device </li>
+        <li>Facilitates the device being used as a dash camera facing forward of the truck </li>
+        <li>Secures the device within the truck firmly enough that the device and the dock do not become projectiles in the event of a roll over</li>
+        <li>Does not obstruct the drivers view </li>
+        <li>Is easily accessible noting other dash instruments and devices in modern day trucks </li>
+      </ul>
+      <p>It is important that the docking station does not interfere with the driver’s field of view as this can constitute an illegal modification. The HoloLens uses a USB cable to recharge and does not draw any more than 2 Amps. The USB power outlet or cigarette outlet of a truck will be fit to facilitate this.  </p>
+
+      <p>In designing the dock, it is important to consider the number of different vehicles that it may be used in. Keeping this in mind it is likely the dock would be designed as a two-piece component. The majority of the docking system including the device bed, the charging integration and the hold-down mechanism should be constructed as one piece with a universal boss. The second part to the dock will be tailored to the specifications of the vehicle that it mounts in. This means part one can be mass produced while part two can be made case by case. </p>
+
+      <h2>Skills Required</h2>
+      <p>Ideally, members would have the following social and human characteristics and skills:</p>
+      <ul>
+        <li>A high level of enthusiasm   </li>
+        <li>Excellent listening skills   </li>
+        <li>A preparedness to undertake tasks that they are not necessarily experienced or competent in   </li>
+        <li>Strive to identify better ways of achieving task goals even if the technique has not been tried and tested.   </li>
+      </ul>
+
+      <p>Team members with these technical skillsets are preferred:</p>
+
+      <ul>
+        <li>Project manager: Responsible for interfacing between the development team and the customer. A degree in IT majoring in Business would be ideal. The manager understands the customer’s needs and their timeline. The manager keeps the team on track by setting due by dates and scheduling tie ins to track progress. The manager notifies the team if any parameters for the development change and if the team has queries for the customer, they go through the manager.    </li>
+        <li>Qualified Heavy Automotive Mechanic: Having one member qualified as a mechanic will save many questions back and forth with the customer. This member will have a firm grasp on what information is important to the truck driver and the customers mechanic. This member will know the names and locations of all the components on the vehicles and be able to create logical sequencing in the diagnostic function of the device.        </li>
+        <li>Data Scientist: Their expertise will be relied upon to support the machine learning aspect of the digital infrastructure. The data scientist will largely be focused on the augmented reality component of the application.    </li>
+        <li>Full stack developer: The final requirement is one member with experience in front and back end development, preferably holding a bachelor of IT majoring in Application Development. The role of the App developer will be paramount in tying all aspects of the application, technology, and the customers’ requirements together.  
+
+ </li>
+      </ul>
+
+      <h2>Pricing </h2>
+      <p>No matter how good our product is, it is critical that we sell it at a price that customers respond to, but also provides an adequate margin, enables the business to operate effectively and permits us to re-invest and continuously improve the solution.  </p>
+      <p>To ensure recurring revenue, pricing would be on an optional rental model of 36, 48 or 60 months. This would cover hardware and software, installation (if required), access to the maintenance platform and technical support. It would be critical that our pricing is clear and transparent as this would build trust in our brand (Balki, 2018). </p>
+      <p>We agree that an outright pricing option would be considered, however in order to encourage customers down the rental path, warranty for outright purchase would be limited to one year whereas under the rental option the warranty would be in place for the full term. </p>
+      <p>Outright purchasers would also still need to pay a monthly subscription for access to the software. </p>
+      <p>While the Microsoft HoloLens is expensive (retailing for just under AU$5,600) there are a range of other virtual reality headsets on the market costing considerably less. Oculus headsets retail for around AU$500 (Stein, 2020), though we would obviously gain re-seller prices for any off the shelf product. There is also a growing market in AR glasses (Sawh, M 2020). Our challenge would be to find (or engage a manufacturer to produce) a headset that fulfils our requirements and provides a positive user experience. </p>
+      <p>Whilst extensive market research would be performed to ensure we hit the right price point, our initial feeling is that truck operators would pay $90 per month for the solution over a 36 month term. </p>
+      <p>At $90 this would provide an annual revenue of $1,080 and total contract value of $3,240. </p>
+      <p>After the rental term ended, we would look to re-sign the customer with new hardware, or ideally squeeze additional months out of the existing hardware in order to maximise our return on the up-front hardware costs. </p>
 
       <h2>Outcome </h2>
       <p>The RGM concept has largely been tailored to large fleet owning organisation but could just as easily be adapted to suit everyday people. Nobody likes waiting on the side of the road for the mobile mechanic to arrive, especially when he says, “sorry there’s nothing I can do with your car on the side of the road”. This concept would save people paying roadside assistance fees, it would increase people’s awareness about their own vehicle, and it would result in vehicles lasting for much longer. When it comes to large organisations, a HoloLens is worth about $5599, most trucks today are worth in excess of $100 000, it would make sense that they pay a small amount extra for this device that will pay dividends in the long run.   </p>
       <p></p>
       <p></p>
       <p></p>
+
+      <h2>References </h2>
+      <ul>
+        <li>National Heavy Vehicle Regulator (NHVR), 2020, viewed 14 October 2020<a href="https://www.nhvr.gov.au/safety-accreditation-compliance/chain-of-responsibility">link</a> </li>
+        <li>Balki, S 2018, ‘How to Choose a Pricing Strategy for Your SaaS Business’, The Entrepreneur, April 24, viewed 15 October 2020 <a href="https://www.entrepreneur.com/article/311425">link</a> </li>
+        <li>Stein, S 2020, ‘Best VR Headsets for 2020’, cnet 8 September, viewed 16 October 2020 <a href="https://www.cnet.com/news/best-vr-headset-for-2020/">link</a> </li>
+        <li>Sawh, M 2020, ‘The best AR glasses and smartglasses 2020: Snap, Vuzix and more’, Wareable , 1 July, viewed 16 October 2020 <a href="https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest">link</a> </li>
+        <li>National Transport Insurance, 2016, ‘NTI’s guide to the Trucking Industry 2016’, viewed 16 October 2020 <a href="http://www.thewordshop.com.au/wp-content/uploads/2011/06/NTI-eBook-Editing.pdf">link</a> </li>
+        <li><a href="https://www.windowscentral.com/microsoft-hololens-2-more-markets-2020">link</a></li>
+      </ul>
+
+      <h2>Group Reflection </h2>
     </div>
 
 
