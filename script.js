@@ -27,6 +27,8 @@ teamMembers.forEach(e => {
       His goal is to complete a Bachelor of Information Technology and get a job in the field of web-development after graduating. </p>
       <p>Personality Test | 16Personalities: ISTP - Explorer </p>
 
+      <a href="https://s3346071.github.io/assignment1/">My Website</a>
+
       `
     }
 
@@ -43,6 +45,7 @@ teamMembers.forEach(e => {
 
         His personality type just needs a push to get going sometimes. After completing these tests, Andrew is definitely more aware of these character traits. However, in a team environment he would still feel more comfortable being a follower and not a leader, unless he is certain that he knows the topic and content extremely well that he is working on. </p>
 
+        <a href="https://andocd.github.io/MyProfile/">My Website</a>
 
         `
     }
@@ -72,6 +75,8 @@ teamMembers.forEach(e => {
 
       <p>The results from these tests will give my teammates a better indication of what my personality could be like in a group setting. As someone who can be equally introverted and extroverted, I can show great listening skills while also being able to come forward and suggest ideas in areas that I am comfortable with. Being mainly a visual learner, I get the most out of watching people or going through the task myself in front of me to get a better understanding. </p>
 
+
+      <a href="https://s3873175.github.io/Assignment-One/">My Website</a>
       `
   }
 
@@ -143,6 +148,7 @@ teamMembers.forEach(e => {
 
           Whilst the Finally, the Big Five Personality Test results point to relatively stable character, the Myer-Briggs result is partly supported by the result in the Learning Styles Test. This suggests that reflection – standing back to observe, collecting data and thinking about what happened – is his learning method, it will be key to get involved and not be an onlooker. </p>
 
+          <a href="https://leigh-crypto.github.io/">My Website</a>
 
     `
 }
@@ -182,6 +188,7 @@ else if (e.target.classList.contains('jake_info')) {
       <p>As a result of completing these tests, my team will have a greater awareness of who I am. The better our understanding of each other, the better we can utilise each other’s strengths to the teams advantage. As a ‘Protagonist’ I hope to encourage open communication and be aware of sensitivities within the team. I can be relied upon to follow through on commitments. However, I must be very aware of my altruistic trait and not to allow other people’s problems to become my own. My ‘Amiable Social Persona’ is a reminder that I can be very supportive when necessary and so I should be aware of other team members losing motivation or becoming overwhelmed. Knowing that I am predominantly an Auditory Learner, the team should be aware that I may miss visual details. However, of benefit, I will likely remember and recall spoken information well. </p>
 
 
+      <a href="https://mrtorquey.github.io/hello-world/">My Website</a>
   `
 }
 else if (e.target.classList.contains('emma_info')) {
@@ -202,6 +209,7 @@ else if (e.target.classList.contains('emma_info')) {
   <p>What does this mean? </p>
   <p>In a team setting knowing the meaning behind personality test results can be useful for spotting potential clashes between team members and may prove helpful in resolving conflicts. Knowing who is likely to take charge and who may need a push to interact with in a team is important, especially online teams where it can be hard to get a read on someone. My results show that in a team I am able to be creative and open-minded, but that I may have trouble with setting realistic goals and completing them. I have to be considerate to my team about completing my work on time. </p>
 
+  <a href="https://else-emma.github.io/Assignment1/">My Website</a>
   `
 }
 
