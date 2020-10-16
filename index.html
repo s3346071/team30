@@ -164,6 +164,84 @@
         <li>Fluid quantities</li>
       </ul>
 
+      <h3>3. Component Identifier and Descriptor </h3>
+      <p>This page details the name, location, description, and function of all components that make up the vehicle. Modern trucks come fitted with many buttons and toggles, it can be hard to remember what all the functions are and how to use them.</p>
+      <p>There are three methods of finding a component on this page:</p>
+      <p>1. Looking at the vehicle with the AR goggles and pointing to a component   </p>
+      <p>2. Using voice to search for an item – “Where are the Air Tanks?”</p>
+      <p>3. A categorical drop-down list of components to select from, for example;   </p>
+
+      <ol>
+        <li>Drive train
+          <ol>
+            <li>Engine   </li>
+            <li>Transmission   </li>
+            <li>Front axle   </li>
+          </ol>
+        </li>
+
+        <li>Body
+          <ol>
+            <li>Cabin</li>
+            <li>Tray   </li>
+
+          </ol>
+        </li>
+        <li>Fuel System
+          <ol>
+            <li>Fuel tank </li>
+            <li>Fuel filter   </li>
+            <li>Fuel lines   </li>
+          </ol>
+        </li>
+        <li>Brake system
+          <ol>
+            <li>Brake fluid reservoir   </li>
+            <li>Brake lines; etc   </li>
+          </ol>
+        </li>
+      </ol>
+
+      <h3>4. Troubleshooting and Diagnosis   </h3>
+      <p>This function takes a driver through a step by step guide on troubleshooting vehicle faults. For example, if the vehicle does not start then the driver would navigate to this page and search for the appropriate troubleshooting guide using either voice command or scrolling through a list. A sequenced diagnosis guide may look like this:</p>
+      <p>a. Truck does not start</p>
+      <ol>
+        <li>check battery voltage – The location of the battery voltage indicator is shown to the driver, and the minimum voltage specification is made known </li>
+        <li>check park brake is applied – The driver is directed to the park brake and shown which position the toggle is supposed to be in. If the toggle is in the correct position, then the driver can say “next” </li>
+        <li>check battery – The driver is guided to the battery compartment and shown what to check on the battery such as terminal security and electrolyte level indicator   </li>
+        <li>check wiring – The driver is shown the wiring route from the battery to the starter motor and other key electrical components      </li>
+        <li>check starter motor – The driver is shown the location of the starter motor and what it is supposed to look like and which terminals to check for security   </li>
+      </ol>
+
+      <p>If the fault is identified, the application will provide guidance on how it can be rectified. If the fault requires tools or equipment, then the driver will be directed to the page: Contact the Mechanic. </p>
+
+      <h3>5. Contact the Mechanic      </h3>
+
+      <p>This page functions as a video conference host between the AR device and an application installed on the phone of a mechanic. The mechanic is accessible when the drivers AR goggles and mechanics phone are both connected to a wireless network. The mechanic can see exactly what the driver is looking at and ask them questions. Some repairs may be achievable by the driver under the guidance of the mechanic. For faults that are not able to be rectified remotely, the mechanic will need to drive out and repair the vehicle himself or have the vehicle recovered to the workshop. Since the mechanic has been able to see the fault, they will know exactly what tools and parts to take to the job, or if it is unrepairable and not worth driving to. In which case, recovery can be actioned without a wasted drive to the site.   </p>
+
+      <h2>Additional Functions of RGM </h2>
+      <p>Another function that could be possible is to have the AR goggles able to connect to the Electronic Control Unit (ECU or Computer) of the vehicle. This connectedness will allow electronic vehicle faults to be displayed through the goggles. The function could also allow technicians to remotely connect into the ECU as a supplement in diagnosis and potentially allow faults to be rectified.</p>
+
+      <h2>Technology Required  </h2>
+      <h3>Hardware </h3>
+      <p>The Microsoft HoloLens 2 is available in Australia here, and retails for AU$5,599.00 incl. GST. As of May 2020, the HoloLens 2 does not have integrated 4G or 5G. While the technology catches up to the requirements of RGM we can use an alternative means of network connectivity. A USB modem such as the Telstra 4GX gives users access to 4G data on the go. The 4GX coupled with this USB-C to USB 3.0 adapter can be plugged into the USB-C port of the HoloLens. </p>
+
+      <p>For the HoloLens to integrate with the truck completely, it will need a means of connecting to the trucks ECU (Electronic Control Unit). To connect to the ECU you must plug into the OBD (On-Board Diagnostics) port of the vehicle. Most vehicles produced after 1996 will have this port (Allstate 2020) and it is typically located under the dash on the driver or passenger side.   </p>
+      <p>In connecting the HoloLens to the ECU we will utilise a wireless OBD2 dongle that pairs with the PyOBD application. PyOBD is an open source OBD2 diagnostic application written entirely in python. The software can be installed on a device with python 2.x or greater. The HoloLens can support the latest version of Python due to it running the Mixed Reality platform under the Windows 10 computer OS.  </p>
+      <p>‘The MaxiECU 4th Gen OBD2 scan tool is a professional full system scan tool that connects to your windows laptop or tablet via stable Bluetooth or Wi-Fi connection.’ (OBD2 Australia 2020). This device is small and can be left attached to the OBD2 port permanently. The MaxiECU and the HoloLens both support Bluetooth and Wi-Fi which provides a redundancy for connectivity.  </p>
+      <p>The HoloLens will require a docking station within the truck that satisfies the following: </p>
+
+      <ul>
+        <li>Is able to charge the device </li>
+        <li>Facilitates the device being used as a dash camera facing forward of the truck </li>
+        <li>Secures the device within the truck firmly enough that the device and the dock do not become projectiles in the event of a roll over</li>
+        <li>Does not obstruct the drivers view </li>
+        <li>Is easily accessible noting other dash instruments and devices in modern day trucks </li>
+      </ul>
+      <p>It is important that the docking station does not interfere with the driver’s field of view as this can constitute an illegal modification. The HoloLens uses a USB cable to recharge and does not draw any more than 2 Amps. The USB power outlet or cigarette outlet of a truck will be fit to facilitate this.  </p>
+
+      <p>In designing the dock, it is important to consider the number of different vehicles that it may be used in. Keeping this in mind it is likely the dock would be designed as a two-piece component. The majority of the docking system including the device bed, the charging integration and the hold-down mechanism should be constructed as one piece with a universal boss. The second part to the dock will be tailored to the specifications of the vehicle that it mounts in. This means part one can be mass produced while part two can be made case by case. </p>
+
 
       <h2>Outcome </h2>
       <p>The RGM concept has largely been tailored to large fleet owning organisation but could just as easily be adapted to suit everyday people. Nobody likes waiting on the side of the road for the mobile mechanic to arrive, especially when he says, “sorry there’s nothing I can do with your car on the side of the road”. This concept would save people paying roadside assistance fees, it would increase people’s awareness about their own vehicle, and it would result in vehicles lasting for much longer. When it comes to large organisations, a HoloLens is worth about $5599, most trucks today are worth in excess of $100 000, it would make sense that they pay a small amount extra for this device that will pay dividends in the long run.   </p>
