@@ -61,7 +61,7 @@ p {
 
 }
 
-.ideal_jobs_menu {
+.other_menu {
   position: static;
 }
 
@@ -315,9 +315,7 @@ border-radius: 22px;
   text-align: center;
 }
 
-.ideal_jobs_menu_flex_container li a {
-  color: #181818;
-}
+
 
 
 
@@ -339,4 +337,9 @@ border-radius: 22px;
 
 i.fa {
   font-size: 4rem;
+}
+
+.other_menu nav li a {
+  position: static;
+  color: #181818;
 }
