@@ -15,9 +15,16 @@ teamMembers.forEach(e => {
 
     textbox.appendChild(infobox)
     if(e.target.classList.contains('yury_info')) {
+
+
+
       infobox.innerHTML =
+
+
       `
-      <p>Student Number: S3346071 </p>
+
+
+      <p >Student Number: S3346071 </p>
       <p>Yury is interested in IT due to its disruptive nature and how it has significantly altered many aspects of our lives. He has witnessed how the way we work, study, commute and socialize, to name a few, are becoming increasingly convenient and efficient.
 
       He has spent a year working in the sales department for a cloud backup company and got to know different aspects of the IT profession.
@@ -56,19 +63,22 @@ teamMembers.forEach(e => {
       <p>Student Number: S3873175</p>
       <p> From the start of my education right through to the end, I moved schools five times, and I was introduced to multiple people and new surroundings. After completing my VCE studies, I had planned to start a Creative Industries course at Victoria University. However, I decided against that by deferring from the classes as I had no idea what I could truly picture myself doing in life.
 
-      Since then I have found my real passion lies within the creative arts and technology. I have worked in hospitality and retail, and I have been a musician in a band as a lead guitarist for the past six years. From working in busy environments full of people, I have been able to improve my ability to work within a team, and my customer service skills. Upon looking for jobs to move up from my current position, I saw many IT roles were searching for candidates. Since I have always had an interest in technology I decided it could be time for a career change, thus leading me to enrol in the Bachelor of IT at RMIT and become a member of Team 30. 
+      Since then I have found my real passion lies within the creative arts and technology. I have worked in hospitality and retail, and I have been a musician in a band as a lead guitarist for the past six years. From working in busy environments full of people, I have been able to improve my ability to work within a team, and my customer service skills. Upon looking for jobs to move up from my current position, I saw many IT roles were searching for candidates. Since I have always had an interest in technology I decided it could be time for a career change, thus leading me to enrol in the Bachelor of IT at RMIT and become a member of Team 30.
 
       I have no real prior expertise within the field, and I hope to gain the relevant experience throughout this course and further self-growth in the outside world, that will lead me to some development roles. Front-end development has caught my eye specifically as it still incorporates creative elements of design etc.
       </p>
 
-      <p>Myers-Brigg 16 Personality Test</p>
-      <p>Personality type: Defender </p>
-      <p>Strengths:  loyal and hard-working, good practical skills, supportive, reliable and patient. </p>
-      <p>Weaknesses: Humble and shy, Overload themselves, repress their feelings, too altruistic. </p>
-      <p>Learning Style Test:</p>
-      <p>Auditory: 35%</p>
-      <p>Visual: 50% </p>
-      <p>Tactile: 15% </p>
+      <ul>
+      <li>Myers-Brigg 16 Personality Test</li>
+      <li>Personality type: Defender </li>
+      <li>Strengths:  loyal and hard-working, good practical skills, supportive, reliable and patient. </li>
+      <li>Weaknesses: Humble and shy, Overload themselves, repress their feelings, too altruistic. </li>
+      <li>Learning Style Test:</li>
+      <li>Auditory: 35%</li>
+      <li>Visual: 50% </li>
+      <li>Tactile: 15% </li>
+      </ul>
+
       <h3>Creativity Style Test:  </h3>
       <h3>Creativity enriches you</h3>
       <p>“Creativity is separate from the real world for you. But it’s a magical world in which you like to immerse yourself. When you’re involved in it, you get the wonderful sensation that there are no limits, that anything is possible. What you are really looking for is harmony — you want to feel you are a part of what you create.” (Psychologies UK – 2020) </p>
