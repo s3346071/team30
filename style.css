@@ -244,6 +244,18 @@ p.team_member_info {
   margin: 1% 0 5%;
 }
 
+.industry_data_section table {
+  margin-bottom: 5%;
+}
+
+.it_technologies img {
+  margin:5% auto;
+}
+
+img.sae {
+  display: block;
+}
+
 .ideal_jobs_section h1 {
   text-align: center;
   margin-bottom: 1%;
