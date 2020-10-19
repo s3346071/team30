@@ -239,7 +239,7 @@ p.team_member_info {
   border: 4px solid #FFFF;
 }
 
-.ideal_jobs_section, .industry_data_section, .it_technologies, .it_work {
+.ideal_jobs_section, .industry_data_section, .it_technologies, .it_work, .group_reflection_section {
   padding: 0 15%;
   margin: 1% 0 5%;
 }
