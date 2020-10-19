@@ -329,8 +329,9 @@ border-radius: 22px;
   text-align: center;
 }
 
-
-
+.test {
+  font-size: 0.8rem;
+}
 
 
 .project_idea {
