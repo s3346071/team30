@@ -34,7 +34,7 @@
           <h1>We are team 30</h1>
           <h1>Welcome to our profile</h1>
         </div>
-        <div class="welcome_section_h2"><h2>This website was built for RMIT's Assignment 2</h2></div>
+        <div class="welcome_section_h2"><h2>We'd like to introduce you to our team and show you what we've been working on</h2></div>
         <div class="welcome_section_button"><a href="#team_section" class="blink">LET'S GO</a></div>
       </div>
 
@@ -104,7 +104,8 @@
 
       <h1>Project Idea</h1>
       <h2>Remote Guided Maintenance</h2>
-      <img src="">
+      <img src="images/marketing_brochure.png" class="brochure">
+      <h5>Figure 1: Marketing brochure</h5>
 
       <h2>Overview </h2>
       <p>We would like to develop an application that can be installed onto the Microsoft <a href="https://www.youtube.com/watch?v=XwOnHqiNAeU">HoloLens II</a> or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including vehicle specifications, operating instructions, troubleshooting and diagnosis guides. The Technology will facilitate live video transmission from the driver back to a technician so that maintenance procedures can be guided remotely. It will also facilitate the transmission of live truck data (sensor outputs, driving habits, vehicle faults etc) back to the Transport Operations Cell of a transport company. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in reduced compliance infringements, preventable breakdowns and even vehicle accidents.</p>
@@ -113,8 +114,6 @@
       <p>Transport and the movement of goods cease when trucks and buses break down. Often companies must send technicians out from a workshop to diagnose, fix and/or recover broken-down vehicles. Alternatively, companies pay large call-out fees to contracted mobile mechanics. The technicians who deploy to support breakdowns are often going in blind, having only received vague fault descriptions in a work request email or over the phone. As a result, Technicians may take the incorrect tools and parts for the job or they may be driving out to do a repair that cannot be achieved on the side of the road. Sometimes the fix is simple and could be achieved by the driver. Sometimes the breakdown has occurred because the driver did not fully understand the operation of the vehicle or the daily maintenance requirements and fluid specifications of the vehicle.   </p>
       <p>The Remote Guided Maintenance (RGM) concept seeks to address all these issues by a providing each vehicle of an organisation with a wearable Augmented Reality device. The device would be installed with a practical application tailored to the make and model of the vehicle it belongs in.    </p>
 
-      <h2>Marketing Brochure</h2>
-      <img src="images/marketing_brochure.png" class="brochure">
       <h2>Application Design</h2>
       <h3>Software</h3>
       <p>Some transport jobs require the truck driver to go out of mobile coverage. For this reason, the HoloLens will store all necessary data and AR overlays on the device itself, which currently has 64GB of storage space.  </p>
@@ -204,7 +203,7 @@
         <li>check wiring – The driver is shown the wiring route from the battery to the starter motor and other key electrical components      </li>
         <li>check starter motor – The driver is shown the location of the starter motor and what it is supposed to look like and which terminals to check for security   </li>
       </ol>
-
+      <br>
       <p>If the fault is identified, the application will provide guidance on how it can be rectified. If the fault requires tools or equipment, then the driver will be directed to the page: Contact the Mechanic. </p>
 
       <h3>5. Contact the Mechanic      </h3>
@@ -229,18 +228,17 @@
       <p>A Cloud server will be used for the transmission of all Telematics data from the truck to the headquarters of the trucking company. The data flow as seen in Figure 2 below, begins at the truck. Data from the ECU is received by the HoloLens. The HoloLens uploads that data to a Cloud server. The data is then accessible through an online (SaaS) application monitored by the Transport Operations Manager. </p>
       <p>The driver also has a direct line of video communication with a technician as well. It is anticipated that a technician working from a depot can send commands to the vehicles ECU via the HoloLens.  </p>
       <p>However, cybersecurity will be a significant point of emphasis since a wireless device will be connected to the truck’s computer. There are <a href="https://www.youtube.com/watch?v=MK0SrxBC1xs&feature=youtu.be&ab_channel=WIRED">examples</a> on YouTube where ethical hackers have hacked into vehicles while they were on the road and overridden braking and steering functions. </p>
-
-      <img src="images/rgmflowchart.jpg" alt="jpg" class="sae" width="750" height="500">
+      <img src="images/rgmflowchart.jpg" width="750" height="500">
       <h5>Figure 2: RGM data flow</h5>
-      
+
 
       <h2>Technology Required  </h2>
       <h3>Hardware </h3>
-      <p>The Microsoft HoloLens 2 is available in Australia here, and retails for AU$5,599.00 incl. GST. As of May 2020, the HoloLens 2 does not have integrated 4G or 5G. While the technology catches up to the requirements of RGM we can use an alternative means of network connectivity. A USB modem such as the Telstra 4GX gives users access to 4G data on the go. The 4GX coupled with this USB-C to USB 3.0 adapter can be plugged into the USB-C port of the HoloLens. </p>
+      <p>The Microsoft HoloLens 2 is available in Australia <a href="https://www.microsoft.com/en-au/p/hololens-2/91pnzzznzwcp?ranMID=24542&ranEAID=kXQk6*ivFEQ&ranSiteID=kXQk6.ivFEQ-jZpHiI_bI6RJdqIzsKAGtA&epi=kXQk6.ivFEQ-jZpHiI_bI6RJdqIzsKAGtA&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=(ir__cceg2kytigkftytykk0sohzwxu2xs2pj2l9hpo1r00)(7593)(1243925)(kXQk6.ivFEQ-jZpHiI_bI6RJdqIzsKAGtA)()&irclickid=_cceg2kytigkftytykk0sohzwxu2xs2pj2l9hpo1r00&activetab=pivot:overviewtab">here</a>, and retails for AU$5,599.00 incl. GST. As of May 2020, the HoloLens 2 does not have integrated 4G or 5G. While the technology catches up to the requirements of RGM we can use an alternative means of network connectivity. A USB modem such as the Telstra <a href="https://www.mydeal.com.au/telstra-pre-paid-4gx-usb-modem-e8372-md-2654910?msclkid=3bb21e1363ab150098484195ceac8408&utm_source=bing&utm_medium=cpc&utm_campaign=Very%20High%20Commission%20(20%2B)&utm_term=4581596236714891&utm_content=Very%20high">4GX</a> gives users access to 4G data on the go. The 4GX coupled with <a href="https://www.amazon.com.au/Rankie-Adapter-Hi-Speed-2-Pack-Black/dp/B01EL4PVFE/ref=asc_df_B01EL4PVFE/?tag=bingshopdesk-22&linkCode=df0&hvadid=&hvpos=&hvnetw=o&hvrand=&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=&hvtargid=pla-4583451671690658&psc=1">this</a> USB-C to USB 3.0 adapter can be plugged into the USB-C port of the HoloLens. </p>
 
       <p>For the HoloLens to integrate with the truck completely, it will need a means of connecting to the trucks ECU (Electronic Control Unit). To connect to the ECU you must plug into the OBD (On-Board Diagnostics) port of the vehicle. Most vehicles produced after 1996 will have this port (Allstate 2020) and it is typically located under the dash on the driver or passenger side.   </p>
-      <p>In connecting the HoloLens to the ECU we will utilise a wireless OBD2 dongle that pairs with the PyOBD application. PyOBD is an open source OBD2 diagnostic application written entirely in python. The software can be installed on a device with python 2.x or greater. The HoloLens can support the latest version of Python due to it running the Mixed Reality platform under the Windows 10 computer OS.  </p>
-      <p>‘The MaxiECU 4th Gen OBD2 scan tool is a professional full system scan tool that connects to your windows laptop or tablet via stable Bluetooth or Wi-Fi connection.’ (OBD2 Australia 2020). This device is small and can be left attached to the OBD2 port permanently. The MaxiECU and the HoloLens both support Bluetooth and Wi-Fi which provides a redundancy for connectivity.  </p>
+      <p>In connecting the HoloLens to the ECU we will utilise a wireless OBD2 dongle that pairs with the PyOBD application. <a href="http://www.obdtester.com/pyobd">PyOBD</a> is an open source OBD2 diagnostic application written entirely in python. The software can be installed on a device with python 2.x or greater. The HoloLens can support the latest version of Python due to it running the Mixed Reality platform under the Windows 10 computer OS.  </p>
+      <p>‘The <a href="https://obd2australia.com.au/product/maxiecu-full-system-obd2-windows-scan-tool/">MaxiECU</a> 4th Gen OBD2 scan tool is a professional full system scan tool that connects to your windows laptop or tablet via stable Bluetooth or Wi-Fi connection.’ (OBD2 Australia 2020). This device is small and can be left attached to the OBD2 port permanently. The MaxiECU and the HoloLens both support Bluetooth and Wi-Fi which provides a redundancy for connectivity.  </p>
       <p>The HoloLens will require a docking station within the truck that satisfies the following: </p>
 
       <ul>
@@ -250,7 +248,7 @@
         <li>Does not obstruct the drivers view </li>
         <li>Is easily accessible noting other dash instruments and devices in modern day trucks </li>
       </ul>
-      <p>It is important that the docking station does not interfere with the driver’s field of view as this can constitute an illegal modification. The HoloLens uses a USB cable to recharge and does not draw any more than 2 Amps. The USB power outlet or cigarette outlet of a truck will be fit to facilitate this.  </p>
+      <p>It is important that the docking station does not interfere with the driver’s field of view as this can constitute an illegal modification. The HoloLens uses a USB cable to recharge and does not draw any more than two amps. The USB power outlet or cigarette outlet of a truck will be fit to facilitate this.  </p>
 
       <p>In designing the dock, it is important to consider the number of different vehicles that it may be used in. Keeping this in mind it is likely the dock would be designed as a two-piece component. The majority of the docking system including the device bed, the charging integration and the hold-down mechanism should be constructed as one piece with a universal boss. The second part to the dock will be tailored to the specifications of the vehicle that it mounts in. This means part one can be mass produced while part two can be made case by case. </p>
 
@@ -266,10 +264,14 @@
       <p>Team members with these technical skillsets are preferred:</p>
 
       <ul>
-        <li>Project manager: Responsible for interfacing between the development team and the customer. A degree in IT majoring in Business would be ideal. The manager understands the customer’s needs and their timeline. The manager keeps the team on track by setting due by dates and scheduling tie ins to track progress. The manager notifies the team if any parameters for the development change and if the team has queries for the customer, they go through the manager.    </li>
-        <li>Qualified Heavy Automotive Mechanic: Having one member qualified as a mechanic will save many questions back and forth with the customer. This member will have a firm grasp on what information is important to the truck driver and the customers mechanic. This member will know the names and locations of all the components on the vehicles and be able to create logical sequencing in the diagnostic function of the device.        </li>
-        <li>Data Scientist: Their expertise will be relied upon to support the machine learning aspect of the digital infrastructure. The data scientist will largely be focused on the augmented reality component of the application.    </li>
-        <li>Full stack developer: The final requirement is one member with experience in front and back end development, preferably holding a bachelor of IT majoring in Application Development. The role of the App developer will be paramount in tying all aspects of the application, technology, and the customers’ requirements together.  
+        <h4>Project manager</h4>
+        <li>Responsible for interfacing between the development team and the customer. A degree in IT majoring in Business would be ideal. The manager understands the customer’s needs and their timeline. The manager keeps the team on track by setting due by dates and scheduling tie ins to track progress. The manager notifies the team if any parameters for the development change and if the team has queries for the customer, they go through the manager.    </li>
+        <h4>Qualified Heavy Automotive Mechanic</h4>
+        <li>Having one member qualified as a mechanic will save many questions back and forth with the customer. This member will have a firm grasp on what information is important to the truck driver and the customers mechanic. This member will know the names and locations of all the components on the vehicles and be able to create logical sequencing in the diagnostic function of the device.        </li>
+        <h4>Data Scientist</h4>
+        <li>Their expertise will be relied upon to support the machine learning aspect of the digital infrastructure. The data scientist will largely be focused on the augmented reality component of the application.    </li>
+        <h4>Full stack developer</h4>
+        <li>The final requirement is one member with experience in front and back end development, preferably holding a bachelor of IT majoring in Application Development. The role of the App developer will be paramount in tying all aspects of the application, technology, and the customers’ requirements together.  
 
  </li>
       </ul>
