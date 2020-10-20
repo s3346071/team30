@@ -9,6 +9,7 @@
 
 body,html {
   height: 100%;
+  max-width: 100vw;
 }
 
 h1,h2,h3 {
@@ -111,17 +112,21 @@ i.fa.fa-briefcase {
 }
 
 .welcome_section {
-  background-image: url("images/background.png");
+  background-image: url("images/bg2.png");
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
-  background-position: 40% 20%;
+  background-position: 40% 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 5%;
   text-align: center;
 
+}
+
+.transition_img {
+  width: 100%;
 }
 
 .welcome_section h1 ,.welcome_section h2, .welcome_section_button  {
