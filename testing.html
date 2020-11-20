@@ -1,97 +1,80 @@
-<h1>Risks</h1>
+<h1>Testing</h1>
+
 <p>
-	In looking at key risks to the project we needed to differentiate risks from issues which actually arise in a project and exist today (Expert Program Management).
+	Ultimately our success will be determined by whether the market sees merit in the RGM, so a key test step will be engaging with potential customers and 
+	providing a prototype or <b>Minimum Viable Product (MVP)</b>.  This will enable us to observe their actual behavior with the RGM. Seeing what a customer might 
+	do with the MVP is likely to be more reliable than just asking – though we would ask also to get as much of an understanding of our market as possible. 
+	In Agile project methodology an MVP is a version of a new product that allows a team to “collect the maximum amount of validated learning about customers 
+	with the least effort” (Agile Alliance, 2020). 
+</p>
+<h3>An example MVP demonstration scenario:</h3>
+	<p>
+		Resources required: 
+		<ul>
+			<li>A hat/helmet with front facing phone holder 
+			<li>A video enabled smart phone with Skype 
+			<li>A computer or another smart phone with Skype 
+			<li>A vehicle or training aid with an induced fault 
+			<li>Tools 
+			<li>Vehicle repair manual 
+		</ul>
+	</p>
+  
+<h3>Method:</h3>
+	<ol>
+		<li>With a truck have a third party technician block the breather of a trucks fuel tank (so that neither the driver nor technician know what the fault is) 
+		<li>Give the truck to a driver and ask him to drive it until it stops and then pull over to the side of the road (due to the breather being blocked, fuel will eventually stop being sucked into the fuel line leading to the engine). 
+		<li>Direct the driver to establish a Skype call between with a technician in a separate location. 
+		<li>Direct the technician to identify the fault by asking the driver to show what has happened. 
+	</ol>
+	
+<p>	
+The outcome following step 4 is variable. Should the technician be able to identify the fault, they should then give direction for fixing the fault. If the 
+technician is unable to identify the fault, they will at least know what the fault is not. 
 </p>
 <p>
-	We also had to make some assumptions such as that our scope is clearly defined. This is critical as once established it will allow us to allocate tasks more efficiently and provide direction (Jamaledine, R 2017). 
+This means the driver will know what parts they do not need to pack 
+and they will have additional time on the road to continue to think about the cause of the fault. 
 </p>
+
 <p>
-	We will follow an agile delivery approach such as scrum (Scrum.org) as part of our broader Agile methodology which will help mitigate many common risks, such as:
+	Initially we would look to approach 12-15 transport companies with the aim of getting a representative feel of feedback. Key players would be:
 	<ul>
-		<li>Scope creep and “gold plating”
-		<li>Inaccurate cost estimates
-		<li>Project team misunderstanding requirements
-		<li>Poor design 
+		<li>Finance personnel who make decisions but should also understand the financial impact of vehicle downtime.
+		<li>Fleet managers and maintenance staff who would ultimately be the back-end users. It would be important for our team involved in dialogue to frame the solution as an aid to the maintenance team rather than any threat to their role.
+		<li>Drivers who are also end users and are critical to get on-board and embrace the technology. Negative attitudes from drivers can spread like cancer and could de-rail engagement.
 	</ul>
 </p>
-		
-<h3>Some key project risks that need to be addressed:</h3>
 
-<table border=1>
-	<tr>
-		<th>Description</th>
-		<th>Likely</th>
-		<th>Impact</th>
-		<th>Mitigations</th>
-	</tr>
-	<tr>
-		<td>
-			Users don’t see value in the product
-		</td>
-		<td>
-			Low
-		</td>
-		<td>		  
-			High
-		</td>
-		<td>
-			<ul>
-				<li>Market research
-				<li>Deliver an MVP as early as possible
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Lack of skills in developing AR software
-		</td>
-		<td>
-			High
-		</td>
-		<td>		  
-			High
-		</td>
-		<td>
-			<ul>
-				<li>Skill up current project team members; or
-				<li>Hire externally
-			</ul>
-		</td>
-	</tr>	
-	<tr>
-		<td>
-			Hardware supply-chain issues due to Covid-19
-		</td>
-		<td>
-			High
-		</td>
-		<td>		  
-			High
-		</td>
-		<td>
-			<ul>
-				<li>Proactively manage customer delivery expectations
-			</ul>
-		</td>
-	</tr>
-		<tr>
-		<td>
-			User confusion over what it can do
-		</td>
-		<td>
-			Medium
-		</td>
-		<td>		  
-			Medium
-		</td>
-		<td>
-			<ul>
-				<li>Focus on usability
-				<li>Offer training and clarity on features covered
-			</ul>
-		</td>
-	</tr>
-</table>
-	
-	 	
+<p>
+Assuming that we do succeed in getting potential customers excited, further testing will be required as early as possible and continue through the software development life cycle.
+</p>
+
+<p>
+There are many different testing techniques that can be deployed. Team 30 would look to perform a combination “white box testing” where there is close examination of the software code and “black box testing” where functional components of the application are tested to ensure that it behaves as expected. It does also include non-functional testing such as performance, load and security (Rajkumar, 2020).
+</p>
+
+<p>
+Our testing regime would address the following testing levels in this order:
+	<ul>
+		<li>Unit Testing – or component testing where individual components of the software are tested to ensure they are working properly.
+		<li>Integration testing – to test the connectivity and data transfer between the components of the RGM.
+		<li>System Testing (or end-to end testing) – this is black box testing where our test plan would include a matrix of scenario’s to see that the full system works as expected.
+	</ul>
+</p>
+
+<p>
+Then once we are ready to release our product:
+	<ul>
+		<li>Acceptance Testing – obtain customer sign off.  
+	</ul>
+</p>
+
+<h3>References</h3>
+<ul>
+<p>
+<li>Agile Alliance, 2020 (definition attributed to Eric Ries), ‘Minimum Viable Product’, viewed 6 November 2020 <a href="https://www.agilealliance.org/glossary/mvp" target="_blank">link</a> </li>
+<li>Rajkumar, 2020, “What Is Software Testing – Definition, Types, Methods, Approaches”, Software Testing Material, viewed 7 November 2020 <a href="https://www.softwaretestingmaterial.com/software-testing/" target="_blank">link</a> </li>
+<li>Bank, C 2014, “15 ways to test your minimum viable product”, The Next Web, 13 November, viewed 1 November 2020 <a href="https://thenextweb.com/dd/2014/11/12/15-ways-test-minimum-viable-product/" target="_blank">link</a> </li>
+</p>
 
